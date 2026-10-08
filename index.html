@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이정화 | 리테일 강의</title>
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Noto Sans KR",sans-serif;
+      background:#f7f9fc;
+      color:#17365d;
+    }
+    .card{
+      max-width:480px;
+      min-height:100vh;
+      margin:auto;
+      padding:55px 28px 35px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      text-align:center;
+    }
+    .top{padding-top:25px}
+    .name{
+      font-size:42px;
+      font-weight:800;
+      letter-spacing:-2px;
+      margin:0 0 18px;
+    }
+    .intro{
+      font-size:20px;
+      line-height:1.65;
+      font-weight:500;
+      margin:0;
+    }
+    .work{
+      margin:45px 0;
+    }
+    .work-title{
+      font-size:18px;
+      font-weight:700;
+      margin-bottom:22px;
+      opacity:.75;
+    }
+    .items{
+      display:grid;
+      gap:14px;
+    }
+    .item{
+      background:white;
+      border:2px solid #dce6f2;
+      border-radius:18px;
+      padding:20px 15px;
+      font-size:23px;
+      font-weight:700;
+      box-shadow:0 5px 15px rgba(23,54,93,.06);
+    }
+    .number{
+      display:inline-block;
+      margin-right:8px;
+      font-size:18px;
+      opacity:.7;
+    }
+    .contact{
+      display:block;
+      width:100%;
+      padding:19px;
+      border:0;
+      border-radius:18px;
+      background:#17365d;
+      color:white;
+      font-size:22px;
+      font-weight:700;
+      text-decoration:none;
+      cursor:pointer;
+      box-shadow:0 8px 20px rgba(23,54,93,.2);
+    }
+    .contact:active{transform:scale(.98)}
+    @media(max-width:360px){
+      .name{font-size:36px}
+      .intro{font-size:18px}
+      .item{font-size:21px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section class="top">
+      <h1 class="name">이정화</h1>
+      <p class="intro">
+        리테일 현장에서 쌓은 경험과<br>
+        서비스의 가치를 전하는 강의 전문가
+      </p>
+    </section>
+
+    <section class="work">
+      <div class="work-title">WHAT I DO</div>
+      <div class="items">
+        <div class="item"><span class="number">01</span>교육</div>
+        <div class="item"><span class="number">02</span>강의</div>
+        <div class="item"><span class="number">03</span>코칭</div>
+      </div>
+    </section>
+
+    <a class="contact" href="tel:01000000000">문의하기</a>
+  </main>
+</body>
+</html>
